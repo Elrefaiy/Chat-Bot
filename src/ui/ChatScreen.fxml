@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="MainPane" prefHeight="591.0" prefWidth="457.0" style="-fx-background-color: #9cc3d5ff;" stylesheets="@ChatScreenStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.ChatScreenController">
+   <children>
+      <Button fx:id="SendBtn" layoutX="372.0" layoutY="541.0" mnemonicParsing="false" onAction="#UserSend" prefHeight="32.0" prefWidth="66.0" style="-fx-background-color: #0063B2ff;" text="Send" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font>
+      </Button>
+      <TextField fx:id="UserTxt" layoutX="18.0" layoutY="541.0" prefHeight="32.0" prefWidth="344.0" style="-fx-background-color: white;" styleClass="chat-text">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+      </TextField>
+      <TextArea fx:id="ChatTxt" editable="false" layoutX="18.0" layoutY="97.0" prefHeight="436.0" prefWidth="422.0" styleClass="chat-text" />
+      <Label layoutX="206.0" layoutY="26.0" prefHeight="45.0" prefWidth="131.0" text="Chat Bot" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="30.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="85.0" fitWidth="83.0" layoutX="120.0" layoutY="6.0">
+         <image>
+            <Image url="@BotIcon.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

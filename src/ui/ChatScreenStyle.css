@@ -1,0 +1,14 @@
+.chat-text{
+	-fx-background-color: white;
+	-fx-background-radius: 5;
+	-fx-border-color: #0063B2ff;
+	-fx-border-radius: 5;
+	-fx-border-width: 2;
+	-fx-text-fill: black;
+	-fx-font-weight: bold;
+	-fx-font-size: 14;
+}
+
+.text-area .content{
+	-fx-background-color: transparent;
+}
